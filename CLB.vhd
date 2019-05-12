@@ -2,13 +2,13 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY CLB IS 
-PORT(
-    input:             IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
-    clb_IN:            IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
-    second_mux_select: IN  STD_LOGIC;
-    clk:               IN  STD_LOGIC;
-    clb_OUT:           OUT STD_LOGIC
-);
+    PORT(
+        input:             IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+        clb_IN:            IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+        second_mux_select: IN  STD_LOGIC;
+        clk:               IN  STD_LOGIC;
+        clb_OUT:           OUT STD_LOGIC
+    );
 END ENTITY;
 
 ARCHITECTURE test OF CLB IS
