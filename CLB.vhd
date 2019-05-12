@@ -21,10 +21,13 @@ COMPONENT flipflop
 END COMPONENT;
 
 COMPONENT mux4 
-    PORT(d: IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+	 PORT(d0:IN STD_LOGIC;
+         d1: IN STD_LOGIC;
+         d2: IN STD_LOGIC;
+	      d3: IN STD_LOGIC;
          s: IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
          y: OUT STD_LOGIC
-    );
+	 );
 END COMPONENT;
 
 SIGNAL mux_result: STD_LOGIC;
@@ -32,7 +35,7 @@ SIGNAL ff_result:  STD_LOGIC;
 
 BEGIN
     
-    big_mux: mux4     PORT MAP(input,clb_IN,mux_result);
+    big_mux: mux4     PORT MAP(input(0),input(1),input(2),input(3),clb_IN,mux_result);
 
     ff:      flipflop PORT MAP(clk, mux_result, ff_result);
 
