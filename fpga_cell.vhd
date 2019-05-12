@@ -135,54 +135,53 @@ BEGIN
 	 clb_ins: CLB PORT MAP(q(3 DOWNTO 0), clb_in_help, q(4),clb_clk_help, clb_out_help);
 	 
 	 cb_ins:  CB  PORT MAP(in_1_left,
-								  in_3_left,
-								  out_2_left_help,
-								  out_4_left_help,
+						   in_3_left,
+						   out_2_left_help,
+						   out_4_left_help,
 								  
-								  q(21),
-								  q(22),
-								  q(23),
-								  q(24),
+						   q(21),
+						   q(22),
+						   q(23),
+						   q(24),
 								  
-								  q(26 DOWNTO 25),
-								  q(28 DOWNTO 27),
-								  q(30 DOWNTO 29),
+						   q(26 DOWNTO 25),
+						   q(28 DOWNTO 27),
+					       q(30 DOWNTO 29),
 								  
-								  clb_out_help,
+						   clb_out_help,
 								  
-								  out_2_left,
-								  out_4_left,
-								  in_1_left_help,
-								  in_3_left_help,
+					   	   out_2_left,
+						   out_4_left,
+						   in_1_left_help,
+						   in_3_left_help,
 								  
-								  clb_in_help,
-								  clb_clk_help
-								  
-								  );
+						   clb_in_help,
+						   clb_clk_help		  
+				   );
 								  
 	 sb_ins:  SB  PORT MAP(in_2_up,
-								  in_4_up, 
-								  in_2_down, 
-								  in_4_down, 
-								  in_1_right, 
-								  in_3_right, 
-								  in_1_left_help,  
-								  in_3_left_help,  
-								  out_1_up, 
-								  out_3_up, 
-								  out_1_down, 
-								  out_3_down, 
-								  out_2_right, 
-								  out_4_right, 
-								  out_2_left_help,
-								  out_4_left_help,
-								  q(6  DOWNTO 5),
-								  q(8  DOWNTO 7),
-								  q(10 DOWNTO 9),
-								  q(12 DOWNTO 11),
-								  q(14 DOWNTO 13),
-								  q(16 DOWNTO 15),
-								  q(18 DOWNTO 17),
-								  q(20 DOWNTO 19)
-								  );
+						   in_4_up, 
+                           in_2_down, 
+                           in_4_down, 
+                           in_1_right, 
+                           in_3_right, 
+                           in_1_left_help,  
+                           in_3_left_help,  
+                           out_1_up, 
+                           out_3_up, 
+                           out_1_down, 
+                           out_3_down, 
+                           out_2_right, 
+                           out_4_right, 
+                           out_2_left_help,
+                           out_4_left_help,
+                           q(6  DOWNTO 5),
+                           q(8  DOWNTO 7),
+                           q(10 DOWNTO 9),
+                           q(12 DOWNTO 11),
+                           q(14 DOWNTO 13),
+                           q(16 DOWNTO 15),
+                           q(18 DOWNTO 17),
+                           q(20 DOWNTO 19)
+					);
 END ARCHITECTURE;
