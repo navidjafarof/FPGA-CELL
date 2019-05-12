@@ -2,8 +2,8 @@ LIBRARY IEEE; USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY fpga_cell IS
     PORT(prog_clk: IN STD_LOGIC;
          prog_in:  IN STD_LOGIC;
-			reset:    IN STD_LOGIC;
-			in_2_up     : IN STD_LOGIC;
+		 reset:    IN STD_LOGIC;
+		 in_2_up     : IN STD_LOGIC;
          in_4_up     : IN STD_LOGIC;
 
          in_2_down   : IN STD_LOGIC; 
@@ -26,7 +26,7 @@ ENTITY fpga_cell IS
     
          out_2_left  : OUT STD_LOGIC;
          out_4_left  : OUT STD_LOGIC;
-			prog_out:  OUT STD_LOGIC
+		 prog_out:  OUT STD_LOGIC
     );
 END ENTITY;
 ARCHITECTURE test OF fpga_cell IS
